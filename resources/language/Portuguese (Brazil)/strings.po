@@ -1,0 +1,202 @@
+# XBMC Media Center language file
+msgid ""
+msgstr ""
+"Project-Id-Version: XBMC-Addons\n"
+"Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
+"POT-Creation-Date: 2013-07-17 09:48+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: pt_BR\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
+
+msgctxt "#20002"
+msgid "Username"
+msgstr "Usuário"
+
+msgctxt "#20003"
+msgid "Password"
+msgstr "Senha"
+
+msgctxt "#30001"
+msgid "Video quality:"
+msgstr "Qualidade de Vídeo:"
+
+msgctxt "#30002"
+msgid "360p (SD)"
+msgstr "360p (SD)"
+
+msgctxt "#30003"
+msgid "480p"
+msgstr "480p"
+
+msgctxt "#30004"
+msgid "720p (HD)"
+msgstr "720p (HD)"
+
+msgctxt "#30005"
+msgid "Ask"
+msgstr "Perguntar"
+
+msgctxt "#30006"
+msgid "Highest available quality"
+msgstr "Melhor Resolução Disponível"
+
+msgctxt "#30008"
+msgid "1080p (HD)"
+msgstr "1080p (HD)"
+
+msgctxt "#40001"
+msgid "Thumbnail quality:"
+msgstr "Qualidade da Miniatura:"
+
+msgctxt "#40002"
+msgid "Low"
+msgstr "Baixa"
+
+msgctxt "#40003"
+msgid "Medium"
+msgstr "Média"
+
+msgctxt "#40004"
+msgid "High"
+msgstr "Alta"
+
+msgctxt "#50000"
+msgid "Anime"
+msgstr "Animes"
+
+msgctxt "#50001"
+msgid "All Anime"
+msgstr "Todos os Animes"
+
+msgctxt "#50002"
+msgid "Updated"
+msgstr "Atualizados Recentemente"
+
+msgctxt "#50003"
+msgid "Popular"
+msgstr "Populares"
+
+msgctxt "#50004"
+msgid "Drama"
+msgstr "Dramas"
+
+msgctxt "#50005"
+msgid "Queue"
+msgstr "Minha Fila"
+
+msgctxt "#50006"
+msgid "Simulcasts"
+msgstr "Simulcasts"
+
+msgctxt "#50007"
+msgid "Genres"
+msgstr "Gêneros"
+
+msgctxt "#50008"
+msgid "All Drama"
+msgstr "Todos os Dramas"
+
+msgctxt "#50009"
+msgid "Pop"
+msgstr "Pop"
+
+msgctxt "#50010"
+msgid "Seasons"
+msgstr "Temporadas"
+
+msgctxt "#70000"
+msgid "Notice"
+msgstr "Aviso"
+
+msgctxt "#70001"
+msgid "Due to licensing restrictions, this series has been removed."
+msgstr "Desculpe, mas devido às limitações de licenciamento, este vídeo não está disponível."
+
+msgctxt "#70002"
+msgid "Attempting to log-in with your user account"
+msgstr "Tentando entrar usando sua conta de usuário"
+
+msgctxt "#70003"
+msgid "No user account found"
+msgstr "Conta de usuário não encontrada"
+
+msgctxt "#70004"
+msgid "Pulling Show Data"
+msgstr "Adquirindo dados do programa"
+
+msgctxt "#70005"
+msgid "Downloading your Queue"
+msgstr "Baixando sua Fila"
+
+msgctxt "#70006"
+msgid "Login Failed: Please check Username and Password"
+msgstr "Falha ao entrar: Verifique seu nome de usuário e senha"
+
+msgctxt "#70007"
+msgid "Internal Plugin Error: Please Report This Bug!"
+msgstr "Erro Interno no Plugin: Por favor, reporte este erro!"
+
+msgctxt "#80001"
+msgid "Video restricted"
+msgstr "Vídeo restrito"
+
+msgctxt "#80002"
+msgid "Video not available to your user account"
+msgstr "Vídeo não disponível para a sua conta"
+
+msgctxt "#80003"
+msgid "Mature Content"
+msgstr "Conteúdo adulto"
+
+msgctxt "#80004"
+msgid "Please login to view this video"
+msgstr "Por favor, entre com sua conta para ver este vídeo"
+
+msgctxt "#100001"
+msgid "Force Language Change:"
+msgstr "Forçar Alteração do Idioma"
+
+msgctxt "#100002"
+msgid "Disabled"
+msgstr "Desativado"
+
+msgctxt "#100003"
+msgid "English (US)"
+msgstr "English (US)"
+
+msgctxt "#100004"
+msgid "English (UK)"
+msgstr "English (UK)"
+
+msgctxt "#100005"
+msgid "Nihongo"
+msgstr "Nihongo"
+
+msgctxt "#100006"
+msgid "Francais (France)"
+msgstr "Français (France)"
+
+msgctxt "#100007"
+msgid "Deutsch"
+msgstr "Deutsch"
+
+msgctxt "#100008"
+msgid "Portugues (Brasil)"
+msgstr "Português (Brasil)"
+
+msgctxt "#100009"
+msgid "Portugues (Portugal)"
+msgstr "Português (Portugal)"
+
+msgctxt "#100010"
+msgid "Espanol (LATAM)"
+msgstr "Español (LATAM)"
+
+msgctxt "#100011"
+msgid "Español (España)"
+msgstr ""

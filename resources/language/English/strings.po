@@ -1,0 +1,247 @@
+# XBMC Media Center language file
+msgid ""
+msgstr ""
+"Project-Id-Version: XBMC-Addons\n"
+"Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
+"POT-Creation-Date: 2013-07-17 09:48+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+#Crunchyroll Login Info
+
+msgctxt "#20002"
+msgid "Username"
+msgstr ""
+
+msgctxt "#20003"
+msgid "Password"
+msgstr ""
+
+msgctxt "#21000"
+msgid "Enable Anonymous Usage Reporting"
+msgstr ""
+
+#Video Quality Selector
+#empty strings from id 20004 to 30000
+
+msgctxt "#30001"
+msgid "Video quality:"
+msgstr ""
+
+msgctxt "#30002"
+msgid "360p (SD)"
+msgstr ""
+
+msgctxt "#30003"
+msgid "480p"
+msgstr ""
+
+msgctxt "#30004"
+msgid "720p (HD)"
+msgstr ""
+
+msgctxt "#30005"
+msgid "Ask"
+msgstr ""
+
+msgctxt "#30006"
+msgid "Highest available quality"
+msgstr ""
+
+#Image Quality Selector
+#empty string with id 30007
+
+msgctxt "#30008"
+msgid "1080p (HD)"
+msgstr ""
+
+#empty strings from id 30009 to 40000
+
+msgctxt "#30101"
+msgid "Episodes"
+msgstr ""
+
+msgctxt "#30102"
+msgid "Series"
+msgstr ""
+
+msgctxt "#30103"
+msgid "Queue Type"
+msgstr ""
+
+msgctxt "#40001"
+msgid "Thumbnail quality:"
+msgstr ""
+
+msgctxt "#40002"
+msgid "Low"
+msgstr ""
+
+msgctxt "#40003"
+msgid "Medium"
+msgstr ""
+
+msgctxt "#40004"
+msgid "High"
+msgstr ""
+
+#Interface Strings
+#empty strings from id 40005 to 49999
+
+msgctxt "#50000"
+msgid "Anime"
+msgstr ""
+
+msgctxt "#50001"
+msgid "All Anime"
+msgstr ""
+
+msgctxt "#50002"
+msgid "Updated"
+msgstr ""
+
+msgctxt "#50003"
+msgid "Popular"
+msgstr ""
+
+msgctxt "#50004"
+msgid "Drama"
+msgstr ""
+
+msgctxt "#50005"
+msgid "Queue"
+msgstr ""
+
+msgctxt "#50006"
+msgid "Simulcasts"
+msgstr ""
+
+msgctxt "#50007"
+msgid "Genres"
+msgstr ""
+
+msgctxt "#50008"
+msgid "All Drama"
+msgstr ""
+
+msgctxt "#50009"
+msgid "Pop"
+msgstr ""
+
+msgctxt "#50010"
+msgid "Seasons"
+msgstr ""
+
+msgctxt "#50011"
+msgid "History"
+msgstr ""
+
+msgctxt "#50012"
+msgid "Alphabetical"
+msgstr ""
+
+#empty strings from id 50100 to 69999
+
+msgctxt "#70000"
+msgid "Notice"
+msgstr ""
+
+msgctxt "#70001"
+msgid "Due to licensing restrictions, this series has been removed."
+msgstr ""
+
+msgctxt "#70002"
+msgid "Attempting to log-in with your user account"
+msgstr ""
+
+msgctxt "#70003"
+msgid "No user account found"
+msgstr ""
+
+msgctxt "#70004"
+msgid "Pulling Show Data"
+msgstr ""
+
+msgctxt "#70005"
+msgid "Downloading your Queue"
+msgstr ""
+
+msgctxt "#70006"
+msgid "Login Failed: Please check Username and Password"
+msgstr ""
+
+msgctxt "#70007"
+msgid "Internal Plugin Error: Please Report This Bug!"
+msgstr ""
+
+#Player Settings
+#empty strings from id 70008 to 80000
+
+msgctxt "#80001"
+msgid "Video restricted"
+msgstr ""
+
+msgctxt "#80002"
+msgid "Video not available to your user account"
+msgstr ""
+
+msgctxt "#80003"
+msgid "Mature Content"
+msgstr ""
+
+msgctxt "#80004"
+msgid "Please login to view this video"
+msgstr ""
+
+#Alternative Language Selector
+#empty strings from id 80005 to 100000
+
+msgctxt "#100001"
+msgid "Force Language Change:"
+msgstr ""
+
+msgctxt "#100002"
+msgid "Default"
+msgstr "Disabled"
+
+msgctxt "#100003"
+msgid "English (US)"
+msgstr ""
+
+msgctxt "#100004"
+msgid "English (UK)"
+msgstr ""
+
+msgctxt "#100005"
+msgid "Nihongo"
+msgstr ""
+
+msgctxt "#100006"
+msgid "Francais (France)"
+msgstr ""
+
+msgctxt "#100007"
+msgid "Deutsch"
+msgstr ""
+
+msgctxt "#100008"
+msgid "Portugues (Brasil)"
+msgstr ""
+
+msgctxt "#100009"
+msgid "Portugues (Portugal)"
+msgstr ""
+
+msgctxt "#100010"
+msgid "Espanol (LATAM)"
+msgstr ""
+
+msgctxt "#100011"
+msgid "Espanol (Espana)"
+msgstr ""

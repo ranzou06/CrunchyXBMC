@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+    <setting id="crunchy_username" type="text" label="20002" default=""/>
+    <setting id="crunchy_password" type="text" label="20003" option="hidden" default=""/>
+    <setting type="sep" />
+    <setting id="queue_type" type="enum" lvalues="30101|30102" label="30103" default="0" />
+    <setting id="video_quality" type="enum" lvalues="30002|30003|30004|30008" label="30001" default="0" />
+	<setting type="sep" />
+	<setting id="change_language" type="enum" lvalues="100002|100003|100004|100005|100006|100007|100008|100009|100010|100011" label="100001" default="0" />
+</settings>
