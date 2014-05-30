@@ -3,7 +3,7 @@
        name="Crunchyroll;xbmc"
 	   provider-name="Yoshi of the Wire"
        version="2.0.1">
-  <import addon="xbmc.python"/>
+  <import addon="xbmc.python" version="2.1.0"/>
   <extension point="xbmc.python.pluginsource"
              library="default.py">
 	<provides>video</provides>
