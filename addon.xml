@@ -10,15 +10,10 @@
   </extension>
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
-    <minversion>29000</minversion>
     <summary lang="en">Watch videos from Crunchyroll.com!</summary>
     <summary lang="no">Se på videoer fra crunchyroll.com!</summary>
     <description lang="en">Crunchyroll is an online video service and community that offers full-length episodes and movies of the very best in Japanese anime and Asian entertainment.</description>
     <description lang="no">Crunchyroll er en online video tjeneste og fellesskap som tilbyr full-lengde episoder og filmer av det aller beste i japansk anime og asiatiske tv serier.</description>
     <disclaimer lang="en">WARNING: You MUST login to use this Plugin</disclaimer>
-    <supportedcontent>
-      <content>movies</content>
-      <content>tvshows</content>
-    </supportedcontent>
   </extension>
 </addon>
