@@ -10,24 +10,13 @@ You should have received a copy of the GNU General Public License along with thi
 """
 import sys
 import os
-import datetime
 import urllib
-import urllib2
 import xbmc
 import xbmcgui
 import xbmcplugin
 import crunchy_json
-import re
-import time
-import xbmcaddon
-import shelve
-import random, re, string
-import json
-import gzip
-import StringIO
-import dateutil.tz, dateutil.relativedelta, dateutil.parser
-__settings__ = xbmcaddon.Addon(id='plugin.video.crunchyroll-takeout')
-__language__ = __settings__.getLocalizedString
+__settings__ = sys.modules[ "__main__" ].__settings__
+
 
 
 
@@ -49,9 +38,6 @@ class UI:
 		self.main = Main(checkMode = False)
 		xbmcplugin.setContent(int(sys.argv[1]), 'movies')
 
-	def Language(self):
-                self.Language = xbmc.Language(os.getcwd())
-	
 	def endofdirectory(self, sortMethod = 'none'):
 		# set sortmethod to something xbmc can use
 		if sortMethod == 'title':
@@ -121,7 +107,7 @@ class UI:
 		ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]), url=u, listitem=li, isFolder=isFolder, totalItems=total_items)
 
 	def showMain(self):
-                local_string = xbmcaddon.Addon(id='plugin.video.crunchyroll-takeout').getLocalizedString
+                local_string = __settings__.getLocalizedString
                 change_language = __settings__.getSetting("change_language")
                 if crunchy_json.CrunchyJSON().loadShelf() is False:
                         self.addItem({'Title':'Session Failed: Check Login'})
@@ -142,7 +128,7 @@ class UI:
                         self.endofdirectory()
 
 	def channels(self):
-                local_string = xbmcaddon.Addon(id='plugin.video.crunchyroll-takeout').getLocalizedString
+                local_string = __settings__.getLocalizedString
                 popular = local_string(50003).encode("utf8")
                 Simulcasts = local_string(50006).encode("utf8")
                 Recently_Added = local_string(50002).encode("utf8")
@@ -180,7 +166,7 @@ class UI:
 		crunchy_json.CrunchyJSON().startPlayback(self.main.args.name, self.main.args.url, self.main.args.id, self.main.args.icon)
 
 	def Fail(self):
-                local_string = xbmcaddon.Addon(id='plugin.video.crunchyroll-takeout').getLocalizedString
+                local_string = __settings__.getLocalizedString
                 badstuff = local_string(70007).encode("utf8")
 		self.addItem({'Title':badstuff,'mode':'none'})
 		print "Crunchyroll takeout --> crunchy_main.py checkMode fall through"

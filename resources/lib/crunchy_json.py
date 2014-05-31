@@ -16,9 +16,7 @@ import urllib2
 import xbmc
 import xbmcgui
 import xbmcplugin
-import re
 import time
-import xbmcaddon
 import shelve
 import random, re, string
 import json
@@ -26,13 +24,12 @@ import gzip
 import StringIO
 import dateutil.tz, dateutil.relativedelta, dateutil.parser
 import crunchy_main
-__settings__ = xbmcaddon.Addon(id='plugin.video.crunchyroll-takeout')
-__language__ = __settings__.getLocalizedString
+__settings__ = sys.modules[ "__main__" ].__settings__
+lineupRegion = __settings__.getSetting("lineupRegion")
 __version__ = sys.modules[ "__main__" ].__version__
 __XBMCBUILD__ = xbmc.getInfoLabel( "System.BuildVersion" ) +" "+ sys.platform
 
-__settings__ = sys.modules[ "__main__" ].__settings__
-lineupRegion = __settings__.getSetting("lineupRegion")
+
 
 class _Info:
 	
@@ -45,7 +42,7 @@ class CrunchyJSON:
                 self.loadShelf()
 
         def loadShelf(self):
-                self.base_path = os.path.join(xbmc.translatePath("special://masterprofile/"), "addon_data", "plugin.video.crunchyroll-takeout")
+                self.base_path = xbmc.translatePath(__settings__.getAddonInfo('profile')).decode('utf-8')
 		self.base_cache_path = os.path.join(self.base_path, "cache")
 		if not os.path.exists(self.base_cache_path):
 			os.makedirs(self.base_cache_path)
@@ -53,7 +50,7 @@ class CrunchyJSON:
                 #Load Persistan Vars
                 try:
                         userData = shelve.open(shelf_path,writeback=True)
-                        local_string = xbmcaddon.Addon(id='plugin.video.crunchyroll-takeout').getLocalizedString
+                        local_string = __settings__.getLocalizedString
                         notice_msg = local_string(70000).encode("utf8")
                         setup_msg = local_string(70003).encode("utf8")
                         change_language = __settings__.getSetting("change_language")
@@ -456,7 +453,7 @@ class CrunchyJSON:
                 session_id = self.userData['session_id']
                 res_quality = ['low','mid','high','ultra']
                 quality = res_quality[int(__settings__.getSetting("video_quality"))]
-                local_string = xbmcaddon.Addon(id='plugin.video.crunchyroll-takeout').getLocalizedString
+                local_string = __settings__.getLocalizedString
                 notice_msg = local_string(70000).encode("utf8")
                 setup_msg = local_string(80001).encode("utf8")
                 #Make the API call 
@@ -515,7 +512,7 @@ class CrunchyJSON:
                                                         x = x + 1
                                                 time.sleep(1)
                                 except:
-                                        print "If our loop should fail"
+                                        print "XBMC stopped playing"
                                 strTimePlayed = str(int(round(timeplayed)))
                                 values = {'session_id':session_id, 'event':'playback_status', 'locale':self.userData['API_LOCALE'], 'media_id':media_id, 'version':'221', 'playhead':strTimePlayed}
                                 request = self.makeAPIRequest('log', values)
