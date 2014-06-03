@@ -115,11 +115,11 @@ class UI:
                 else:
                         if change_language != "0":
                                 crunchy_json.CrunchyJSON().changeLocale()
-                        Anime = local_string(50000).encode("utf8")
-                        Drama = local_string(50004).encode("utf8")
-                        Queue = local_string(50005).encode("utf8")
-                        Pop = local_string(50009).encode("utf8")
-                        History = local_string(50011).encode("utf8")
+                        Anime = local_string(35000).encode("utf8")
+                        Drama = local_string(35004).encode("utf8")
+                        Queue = local_string(35005).encode("utf8")
+                        #Pop = local_string(35009).encode("utf8")
+                        History = local_string(35011).encode("utf8")
                         self.addItem({'Title':Queue, 'mode':'queue'})
                         self.addItem({'Title':History, 'mode':'History'})
                         self.addItem({'Title':Anime, 'mode':'Channels','showtype':'Anime'})
@@ -129,12 +129,12 @@ class UI:
 
 	def channels(self):
                 local_string = __settings__.getLocalizedString
-                popular = local_string(50003).encode("utf8")
-                Simulcasts = local_string(50006).encode("utf8")
-                Recently_Added = local_string(50002).encode("utf8")
-                alpha = local_string(50012).encode("utf8")
-                Browse_by_Genre = local_string(50007).encode("utf8")
-                seasons = local_string(50010).encode("utf8")
+                popular = local_string(35003).encode("utf8")
+                Simulcasts = local_string(35006).encode("utf8")
+                Recently_Added = local_string(35002).encode("utf8")
+                alpha = local_string(35012).encode("utf8")
+                Browse_by_Genre = local_string(35007).encode("utf8")
+                seasons = local_string(35010).encode("utf8")
                 showtype = self.main.args.showtype
                 self.addItem({'Title':popular,          'mode':'list_series', 'showtype':showtype, 'filterx':'popular', 'offset':'0'})
                 self.addItem({'Title':Simulcasts,       'mode':'list_series', 'showtype':showtype, 'filterx':'simulcast', 'offset':'0'})
@@ -167,7 +167,7 @@ class UI:
 
 	def Fail(self):
                 local_string = __settings__.getLocalizedString
-                badstuff = local_string(70007).encode("utf8")
+                badstuff = local_string(37007).encode("utf8")
 		self.addItem({'Title':badstuff,'mode':'none'})
 		print "Crunchyroll takeout --> crunchy_main.py checkMode fall through"
 		self.endofdirectory()

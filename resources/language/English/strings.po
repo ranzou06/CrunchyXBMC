@@ -15,233 +15,221 @@ msgstr ""
 
 #Crunchyroll Login Info
 
-msgctxt "#20002"
+msgctxt "#32002"
 msgid "Username"
 msgstr ""
 
-msgctxt "#20003"
+msgctxt "#32003"
 msgid "Password"
 msgstr ""
 
-msgctxt "#21000"
+msgctxt "#32100"
 msgid "Enable Anonymous Usage Reporting"
 msgstr ""
 
-#Video Quality Selector
-#empty strings from id 20004 to 30000
-
-msgctxt "#30001"
+msgctxt "#33001"
 msgid "Video quality:"
 msgstr ""
 
-msgctxt "#30002"
+msgctxt "#33002"
 msgid "360p (SD)"
 msgstr ""
 
-msgctxt "#30003"
+msgctxt "#33003"
 msgid "480p"
 msgstr ""
 
-msgctxt "#30004"
+msgctxt "#33004"
 msgid "720p (HD)"
 msgstr ""
 
-msgctxt "#30005"
+msgctxt "#33005"
 msgid "Ask"
 msgstr ""
 
-msgctxt "#30006"
+msgctxt "#33006"
 msgid "Highest available quality"
 msgstr ""
 
 #Image Quality Selector
 #empty string with id 30007
 
-msgctxt "#30008"
+msgctxt "#33008"
 msgid "1080p (HD)"
 msgstr ""
 
-#empty strings from id 30009 to 40000
-
-msgctxt "#30101"
+msgctxt "#33101"
 msgid "Episodes"
 msgstr ""
 
-msgctxt "#30102"
+msgctxt "#33102"
 msgid "Series"
 msgstr ""
 
-msgctxt "#30103"
+msgctxt "#33103"
 msgid "Queue Type"
 msgstr ""
 
-msgctxt "#40001"
+msgctxt "#34001"
 msgid "Thumbnail quality:"
 msgstr ""
 
-msgctxt "#40002"
+msgctxt "#34002"
 msgid "Low"
 msgstr ""
 
-msgctxt "#40003"
+msgctxt "#34003"
 msgid "Medium"
 msgstr ""
 
-msgctxt "#40004"
+msgctxt "#34004"
 msgid "High"
 msgstr ""
 
-#Interface Strings
-#empty strings from id 40005 to 49999
-
-msgctxt "#50000"
+msgctxt "#35000"
 msgid "Anime"
 msgstr ""
 
-msgctxt "#50001"
+msgctxt "#35001"
 msgid "All Anime"
 msgstr ""
 
-msgctxt "#50002"
+msgctxt "#35002"
 msgid "Updated"
 msgstr ""
 
-msgctxt "#50003"
+msgctxt "#35003"
 msgid "Popular"
 msgstr ""
 
-msgctxt "#50004"
+msgctxt "#35004"
 msgid "Drama"
 msgstr ""
 
-msgctxt "#50005"
+msgctxt "#35005"
 msgid "Queue"
 msgstr ""
 
-msgctxt "#50006"
+msgctxt "#35006"
 msgid "Simulcasts"
 msgstr ""
 
-msgctxt "#50007"
+msgctxt "#35007"
 msgid "Genres"
 msgstr ""
 
-msgctxt "#50008"
+msgctxt "#35008"
 msgid "All Drama"
 msgstr ""
 
-msgctxt "#50009"
+msgctxt "#35009"
 msgid "Pop"
 msgstr ""
 
-msgctxt "#50010"
+msgctxt "#35010"
 msgid "Seasons"
 msgstr ""
 
-msgctxt "#50011"
+msgctxt "#35011"
 msgid "History"
 msgstr ""
 
-msgctxt "#50012"
+msgctxt "#35012"
 msgid "Alphabetical"
 msgstr ""
 
-#empty strings from id 50100 to 69999
-
-msgctxt "#70000"
+msgctxt "#37000"
 msgid "Notice"
 msgstr ""
 
-msgctxt "#70001"
+msgctxt "#37001"
 msgid "Due to licensing restrictions, this series has been removed."
 msgstr ""
 
-msgctxt "#70002"
+msgctxt "#37002"
 msgid "Attempting to log-in with your user account"
 msgstr ""
 
-msgctxt "#70003"
+msgctxt "#37003"
 msgid "No user account found"
 msgstr ""
 
-msgctxt "#70004"
+msgctxt "#37004"
 msgid "Pulling Show Data"
 msgstr ""
 
-msgctxt "#70005"
+msgctxt "#37005"
 msgid "Downloading your Queue"
 msgstr ""
 
-msgctxt "#70006"
+msgctxt "#37006"
 msgid "Login Failed: Please check Username and Password"
 msgstr ""
 
-msgctxt "#70007"
+msgctxt "#37007"
 msgid "Internal Plugin Error: Please Report This Bug!"
 msgstr ""
 
-#Player Settings
-#empty strings from id 70008 to 80000
-
-msgctxt "#80001"
+msgctxt "#38001"
 msgid "Video restricted"
 msgstr ""
 
-msgctxt "#80002"
+msgctxt "#38002"
 msgid "Video not available to your user account"
 msgstr ""
 
-msgctxt "#80003"
+msgctxt "#38003"
 msgid "Mature Content"
 msgstr ""
 
-msgctxt "#80004"
+msgctxt "#38004"
 msgid "Please login to view this video"
 msgstr ""
 
-#Alternative Language Selector
-#empty strings from id 80005 to 100000
-
-msgctxt "#100001"
+msgctxt "#39001"
 msgid "Force Language Change:"
 msgstr ""
 
-msgctxt "#100002"
+msgctxt "#39002"
 msgid "Default"
 msgstr "Disabled"
 
-msgctxt "#100003"
+msgctxt "#39003"
 msgid "English (US)"
 msgstr ""
 
-msgctxt "#100004"
+msgctxt "#39004"
 msgid "English (UK)"
 msgstr ""
 
-msgctxt "#100005"
+msgctxt "#39005"
 msgid "Nihongo"
 msgstr ""
 
-msgctxt "#100006"
+msgctxt "#39006"
 msgid "Francais (France)"
 msgstr ""
 
-msgctxt "#100007"
+msgctxt "#39007"
 msgid "Deutsch"
 msgstr ""
 
-msgctxt "#100008"
+msgctxt "#39008"
 msgid "Portugues (Brasil)"
 msgstr ""
 
-msgctxt "#100009"
+msgctxt "#39009"
 msgid "Portugues (Portugal)"
 msgstr ""
 
-msgctxt "#100010"
+msgctxt "#39010"
 msgid "Espanol (LATAM)"
 msgstr ""
 
-msgctxt "#100011"
+msgctxt "#39011"
 msgid "Espanol (Espana)"
 msgstr ""
+
+msgctxt "#39012"
+msgid "Espanol (Espana)"
+msgstr "Done. Force language change is now disabled."

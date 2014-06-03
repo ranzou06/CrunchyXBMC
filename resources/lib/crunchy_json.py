@@ -51,8 +51,8 @@ class CrunchyJSON:
                 try:
                         userData = shelve.open(shelf_path,writeback=True)
                         local_string = __settings__.getLocalizedString
-                        notice_msg = local_string(70000).encode("utf8")
-                        setup_msg = local_string(70003).encode("utf8")
+                        notice_msg = local_string(37000).encode("utf8")
+                        setup_msg = local_string(37003).encode("utf8")
                         change_language = __settings__.getSetting("change_language")
                         if change_language == "0":
                                 userData.setdefault('API_LOCALE',"enUS")
@@ -454,8 +454,8 @@ class CrunchyJSON:
                 res_quality = ['low','mid','high','ultra']
                 quality = res_quality[int(__settings__.getSetting("video_quality"))]
                 local_string = __settings__.getLocalizedString
-                notice_msg = local_string(70000).encode("utf8")
-                setup_msg = local_string(80001).encode("utf8")
+                notice_msg = local_string(37000).encode("utf8")
+                setup_msg = local_string(38001).encode("utf8")
                 #Make the API call 
                 fields = "media.episode_number,media.name,media.description,media.url,media.stream_data"
                 values = {'session_id':self.userData['session_id'], 'version':self.userData['API_VERSION'], 'locale':self.userData['API_LOCALE'], 'media_id':media_id, 'fields':fields}
@@ -544,9 +544,13 @@ class CrunchyJSON:
         def changeLocale(self):
                 import cookielib
                 cj = cookielib.LWPCookieJar()
+                local_string = __settings__.getLocalizedString
+                notice_msg = local_string(39001).encode("utf8")
+                notice_err = local_string(37006).encode("utf8")
+                notice_done = local_string(37012).encode("utf8")
                 if (self.userData['username'] != '' and self.userData['password'] != ''):
                     print "Crunchyroll.language: --> Attempting to log-in with your user account..."
-                    ex = 'XBMC.Notification("Atention:","Forcing language change to '+self.userData['API_LOCALE']+'.", 7000, '+xbmc.translatePath( __settings__.getAddonInfo('icon') )+')'
+                    ex = 'XBMC.Notification('+notice_msg+self.userData['API_LOCALE']+'.", 7000, '+xbmc.translatePath( __settings__.getAddonInfo('icon') )+')'
                     xbmc.executebuiltin(ex)
                     url = 'https://www.crunchyroll.com/?a=formhandler'
                     data = urllib.urlencode({'formname':'RpcApiUser_Login', 'next_url':'','fail_url':'/login','name':self.userData['username'],'password':self.userData['password']})
@@ -557,7 +561,7 @@ class CrunchyJSON:
                     req = opener.open(url, data)
                     req.close()
                 else:
-                    ex = 'XBMC.Notification("NOTICE:","Account not found.", 9000)'
+                    ex = 'XBMC.Notification('+notice_err+', 9000)'
                     xbmc.executebuiltin(ex)
                     print "Crunchyroll.language: --> NO CRUNCHYROLL ACCOUNT FOUND!"
                 # print "Crunchyroll.language: --> logged in"
@@ -573,7 +577,7 @@ class CrunchyJSON:
                 req = self.opener.open(url, data)
                 req.close()
                 print 'Crunchyroll.language: --> Now using '+self.userData['API_LOCALE']
-                ex = 'XBMC.Notification("Atention:","Done. Force language change is now disabled.", 5100, '+xbmc.translatePath( __settings__.getAddonInfo('icon') )+')'
+                ex = 'XBMC.Notification('+notice_done+'", 5100, '+xbmc.translatePath( __settings__.getAddonInfo('icon') )+')'
                 xbmc.executebuiltin(ex)
                 print "Crunchyroll.language: --> Disabling the force change language setting."
                 __settings__.setSetting(id="change_language", value="0")

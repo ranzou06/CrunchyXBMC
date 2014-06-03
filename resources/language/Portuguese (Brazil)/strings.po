@@ -13,190 +13,190 @@ msgstr ""
 "Language: pt_BR\n"
 "Plural-Forms: nplurals=2; plural=(n > 1)\n"
 
-msgctxt "#20002"
+msgctxt "#32002"
 msgid "Username"
 msgstr "Usuário"
 
-msgctxt "#20003"
+msgctxt "#32003"
 msgid "Password"
 msgstr "Senha"
 
-msgctxt "#30001"
+msgctxt "#33001"
 msgid "Video quality:"
 msgstr "Qualidade de Vídeo:"
 
-msgctxt "#30002"
+msgctxt "#33002"
 msgid "360p (SD)"
 msgstr "360p (SD)"
 
-msgctxt "#30003"
+msgctxt "#33003"
 msgid "480p"
 msgstr "480p"
 
-msgctxt "#30004"
+msgctxt "#33004"
 msgid "720p (HD)"
 msgstr "720p (HD)"
 
-msgctxt "#30005"
+msgctxt "#33005"
 msgid "Ask"
 msgstr "Perguntar"
 
-msgctxt "#30006"
+msgctxt "#33006"
 msgid "Highest available quality"
 msgstr "Melhor Resolução Disponível"
 
-msgctxt "#30008"
+msgctxt "#33008"
 msgid "1080p (HD)"
 msgstr "1080p (HD)"
 
-msgctxt "#40001"
+msgctxt "#34001"
 msgid "Thumbnail quality:"
 msgstr "Qualidade da Miniatura:"
 
-msgctxt "#40002"
+msgctxt "#34002"
 msgid "Low"
 msgstr "Baixa"
 
-msgctxt "#40003"
+msgctxt "#34003"
 msgid "Medium"
 msgstr "Média"
 
-msgctxt "#40004"
+msgctxt "#34004"
 msgid "High"
 msgstr "Alta"
 
-msgctxt "#50000"
+msgctxt "#35000"
 msgid "Anime"
 msgstr "Animes"
 
-msgctxt "#50001"
+msgctxt "#35001"
 msgid "All Anime"
 msgstr "Todos os Animes"
 
-msgctxt "#50002"
+msgctxt "#35002"
 msgid "Updated"
 msgstr "Atualizados Recentemente"
 
-msgctxt "#50003"
+msgctxt "#35003"
 msgid "Popular"
 msgstr "Populares"
 
-msgctxt "#50004"
+msgctxt "#35004"
 msgid "Drama"
 msgstr "Dramas"
 
-msgctxt "#50005"
+msgctxt "#35005"
 msgid "Queue"
 msgstr "Minha Fila"
 
-msgctxt "#50006"
+msgctxt "#35006"
 msgid "Simulcasts"
 msgstr "Simulcasts"
 
-msgctxt "#50007"
+msgctxt "#35007"
 msgid "Genres"
 msgstr "Gêneros"
 
-msgctxt "#50008"
+msgctxt "#35008"
 msgid "All Drama"
 msgstr "Todos os Dramas"
 
-msgctxt "#50009"
+msgctxt "#35009"
 msgid "Pop"
 msgstr "Pop"
 
-msgctxt "#50010"
+msgctxt "#35010"
 msgid "Seasons"
 msgstr "Temporadas"
 
-msgctxt "#70000"
+msgctxt "#37000"
 msgid "Notice"
 msgstr "Aviso"
 
-msgctxt "#70001"
+msgctxt "#37001"
 msgid "Due to licensing restrictions, this series has been removed."
 msgstr "Desculpe, mas devido às limitações de licenciamento, este vídeo não está disponível."
 
-msgctxt "#70002"
+msgctxt "#37002"
 msgid "Attempting to log-in with your user account"
 msgstr "Tentando entrar usando sua conta de usuário"
 
-msgctxt "#70003"
+msgctxt "#37003"
 msgid "No user account found"
 msgstr "Conta de usuário não encontrada"
 
-msgctxt "#70004"
+msgctxt "#37004"
 msgid "Pulling Show Data"
 msgstr "Adquirindo dados do programa"
 
-msgctxt "#70005"
+msgctxt "#37005"
 msgid "Downloading your Queue"
 msgstr "Baixando sua Fila"
 
-msgctxt "#70006"
+msgctxt "#37006"
 msgid "Login Failed: Please check Username and Password"
 msgstr "Falha ao entrar: Verifique seu nome de usuário e senha"
 
-msgctxt "#70007"
+msgctxt "#37007"
 msgid "Internal Plugin Error: Please Report This Bug!"
 msgstr "Erro Interno no Plugin: Por favor, reporte este erro!"
 
-msgctxt "#80001"
+msgctxt "#38001"
 msgid "Video restricted"
 msgstr "Vídeo restrito"
 
-msgctxt "#80002"
+msgctxt "#38002"
 msgid "Video not available to your user account"
 msgstr "Vídeo não disponível para a sua conta"
 
-msgctxt "#80003"
+msgctxt "#38003"
 msgid "Mature Content"
 msgstr "Conteúdo adulto"
 
-msgctxt "#80004"
+msgctxt "#38004"
 msgid "Please login to view this video"
 msgstr "Por favor, entre com sua conta para ver este vídeo"
 
-msgctxt "#100001"
+msgctxt "#39001"
 msgid "Force Language Change:"
 msgstr "Forçar Alteração do Idioma"
 
-msgctxt "#100002"
+msgctxt "#39002"
 msgid "Disabled"
 msgstr "Desativado"
 
-msgctxt "#100003"
+msgctxt "#39003"
 msgid "English (US)"
 msgstr "English (US)"
 
-msgctxt "#100004"
+msgctxt "#39004"
 msgid "English (UK)"
 msgstr "English (UK)"
 
-msgctxt "#100005"
+msgctxt "#39005"
 msgid "Nihongo"
 msgstr "Nihongo"
 
-msgctxt "#100006"
+msgctxt "#39006"
 msgid "Francais (France)"
 msgstr "Français (France)"
 
-msgctxt "#100007"
+msgctxt "#39007"
 msgid "Deutsch"
 msgstr "Deutsch"
 
-msgctxt "#100008"
+msgctxt "#39008"
 msgid "Portugues (Brasil)"
 msgstr "Português (Brasil)"
 
-msgctxt "#100009"
+msgctxt "#39009"
 msgid "Portugues (Portugal)"
 msgstr "Português (Portugal)"
 
-msgctxt "#100010"
+msgctxt "#39010"
 msgid "Espanol (LATAM)"
 msgstr "Español (LATAM)"
 
-msgctxt "#100011"
+msgctxt "#39011"
 msgid "Español (España)"
 msgstr ""
