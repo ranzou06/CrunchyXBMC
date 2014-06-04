@@ -187,7 +187,7 @@ msgid "Please login to view this video"
 msgstr ""
 
 msgctxt "#39001"
-msgid "Force Language Change:"
+msgid "Force Language Change"
 msgstr ""
 
 msgctxt "#39002"
@@ -231,5 +231,5 @@ msgid "Espanol (Espana)"
 msgstr ""
 
 msgctxt "#39012"
-msgid "Espanol (Espana)"
-msgstr "Done. Force language change is now disabled."
+msgid "Done. Force language change is now disabled."
+msgstr ""

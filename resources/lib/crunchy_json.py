@@ -22,7 +22,7 @@ import random, re, string
 import json
 import gzip
 import StringIO
-import dateutil.tz, dateutil.relativedelta, dateutil.parser
+import dateutil.tz, dateutil.relativedelta, dateutil.parser 
 import crunchy_main
 __settings__ = sys.modules[ "__main__" ].__settings__
 lineupRegion = __settings__.getSetting("lineupRegion")
@@ -545,13 +545,14 @@ class CrunchyJSON:
                 import cookielib
                 cj = cookielib.LWPCookieJar()
                 local_string = __settings__.getLocalizedString
+                notice = local_string(37000).encode("utf8")
                 notice_msg = local_string(39001).encode("utf8")
                 notice_err = local_string(37006).encode("utf8")
-                notice_done = local_string(37012).encode("utf8")
+                notice_done = local_string(39012).encode("utf8")
+                icon = xbmc.translatePath( __settings__.getAddonInfo('icon'))
                 if (self.userData['username'] != '' and self.userData['password'] != ''):
                     print "Crunchyroll.language: --> Attempting to log-in with your user account..."
-                    ex = 'XBMC.Notification('+notice_msg+self.userData['API_LOCALE']+'.", 7000, '+xbmc.translatePath( __settings__.getAddonInfo('icon') )+')'
-                    xbmc.executebuiltin(ex)
+                    xbmc.executebuiltin('Notification('+notice+','+notice_msg+',5000,'+icon+')')
                     url = 'https://www.crunchyroll.com/?a=formhandler'
                     data = urllib.urlencode({'formname':'RpcApiUser_Login', 'next_url':'','fail_url':'/login','name':self.userData['username'],'password':self.userData['password']})
                     opener = urllib2.build_opener(urllib2.HTTPCookieProcessor(cj))
@@ -560,9 +561,8 @@ class CrunchyJSON:
                     urllib2.install_opener(opener)
                     req = opener.open(url, data)
                     req.close()
-                else:
-                    ex = 'XBMC.Notification('+notice_err+', 9000)'
-                    xbmc.executebuiltin(ex)
+                else:                    
+                    xbmc.executebuiltin('Notification('+notice+','+notice_err+',5000,'+icon+')')
                     print "Crunchyroll.language: --> NO CRUNCHYROLL ACCOUNT FOUND!"
                 # print "Crunchyroll.language: --> logged in"
                 url = 'https://www.crunchyroll.com/?a=formhandler'
@@ -577,8 +577,7 @@ class CrunchyJSON:
                 req = self.opener.open(url, data)
                 req.close()
                 print 'Crunchyroll.language: --> Now using '+self.userData['API_LOCALE']
-                ex = 'XBMC.Notification('+notice_done+'", 5100, '+xbmc.translatePath( __settings__.getAddonInfo('icon') )+')'
-                xbmc.executebuiltin(ex)
+                xbmc.executebuiltin('Notification('+notice+','+notice_done+',5000,'+icon+')')
                 print "Crunchyroll.language: --> Disabling the force change language setting."
                 __settings__.setSetting(id="change_language", value="0")
 
