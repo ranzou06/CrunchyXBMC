@@ -15,221 +15,150 @@ msgstr ""
 
 #Crunchyroll Login Info
 
-msgctxt "#32002"
+msgctxt "#30001"
 msgid "Username"
 msgstr ""
 
-msgctxt "#32003"
+msgctxt "#30002"
 msgid "Password"
 msgstr ""
 
-msgctxt "#32100"
-msgid "Enable Anonymous Usage Reporting"
-msgstr ""
-
-msgctxt "#33001"
+msgctxt "#30003"
 msgid "Video quality:"
 msgstr ""
 
-msgctxt "#33002"
+msgctxt "#30004"
 msgid "360p (SD)"
 msgstr ""
 
-msgctxt "#33003"
+msgctxt "#30005"
 msgid "480p"
 msgstr ""
 
-msgctxt "#33004"
+msgctxt "#30006"
 msgid "720p (HD)"
 msgstr ""
 
-msgctxt "#33005"
-msgid "Ask"
-msgstr ""
-
-msgctxt "#33006"
-msgid "Highest available quality"
-msgstr ""
-
-#Image Quality Selector
-#empty string with id 30007
-
-msgctxt "#33008"
+msgctxt "#30008"
 msgid "1080p (HD)"
 msgstr ""
 
-msgctxt "#33101"
+msgctxt "#30009"
 msgid "Episodes"
 msgstr ""
 
-msgctxt "#33102"
+msgctxt "#30010"
 msgid "Series"
 msgstr ""
 
-msgctxt "#33103"
+msgctxt "#30011"
 msgid "Queue Type"
 msgstr ""
 
-msgctxt "#34001"
-msgid "Thumbnail quality:"
-msgstr ""
-
-msgctxt "#34002"
-msgid "Low"
-msgstr ""
-
-msgctxt "#34003"
-msgid "Medium"
-msgstr ""
-
-msgctxt "#34004"
-msgid "High"
-msgstr ""
-
-msgctxt "#35000"
+msgctxt "#30100"
 msgid "Anime"
 msgstr ""
 
-msgctxt "#35001"
-msgid "All Anime"
-msgstr ""
-
-msgctxt "#35002"
+msgctxt "#30102"
 msgid "Updated"
 msgstr ""
 
-msgctxt "#35003"
+msgctxt "#30103"
 msgid "Popular"
 msgstr ""
 
-msgctxt "#35004"
+msgctxt "#30104"
 msgid "Drama"
 msgstr ""
 
-msgctxt "#35005"
+msgctxt "#30105"
 msgid "Queue"
 msgstr ""
 
-msgctxt "#35006"
+msgctxt "#30106"
 msgid "Simulcasts"
 msgstr ""
 
-msgctxt "#35007"
+msgctxt "#30107"
 msgid "Genres"
 msgstr ""
 
-msgctxt "#35008"
-msgid "All Drama"
-msgstr ""
-
-msgctxt "#35009"
-msgid "Pop"
-msgstr ""
-
-msgctxt "#35010"
+msgctxt "#30110"
 msgid "Seasons"
 msgstr ""
 
-msgctxt "#35011"
+msgctxt "#30111"
 msgid "History"
 msgstr ""
 
-msgctxt "#35012"
+msgctxt "#30112"
 msgid "Alphabetical"
 msgstr ""
 
-msgctxt "#37000"
+msgctxt "#30200"
 msgid "Notice"
 msgstr ""
 
-msgctxt "#37001"
-msgid "Due to licensing restrictions, this series has been removed."
-msgstr ""
-
-msgctxt "#37002"
-msgid "Attempting to log-in with your user account"
-msgstr ""
-
-msgctxt "#37003"
+msgctxt "#30203"
 msgid "No user account found"
 msgstr ""
 
-msgctxt "#37004"
-msgid "Pulling Show Data"
-msgstr ""
-
-msgctxt "#37005"
-msgid "Downloading your Queue"
-msgstr ""
-
-msgctxt "#37006"
+msgctxt "#30206"
 msgid "Login Failed: Please check Username and Password"
 msgstr ""
 
-msgctxt "#37007"
+msgctxt "#30207"
 msgid "Internal Plugin Error: Please Report This Bug!"
 msgstr ""
 
-msgctxt "#38001"
+msgctxt "#30212"
 msgid "Video restricted"
 msgstr ""
 
-msgctxt "#38002"
-msgid "Video not available to your user account"
-msgstr ""
-
-msgctxt "#38003"
-msgid "Mature Content"
-msgstr ""
-
-msgctxt "#38004"
-msgid "Please login to view this video"
-msgstr ""
-
-msgctxt "#39001"
+msgctxt "#30211"
 msgid "Force Language Change"
 msgstr ""
 
-msgctxt "#39002"
+msgctxt "#30300"
 msgid "Default"
 msgstr "Disabled"
 
-msgctxt "#39003"
+msgctxt "#30301"
 msgid "English (US)"
 msgstr ""
 
-msgctxt "#39004"
+msgctxt "#30302"
 msgid "English (UK)"
 msgstr ""
 
-msgctxt "#39005"
+msgctxt "#30303"
 msgid "Nihongo"
 msgstr ""
 
-msgctxt "#39006"
+msgctxt "#30304"
 msgid "Francais (France)"
 msgstr ""
 
-msgctxt "#39007"
+msgctxt "#30305"
 msgid "Deutsch"
 msgstr ""
 
-msgctxt "#39008"
+msgctxt "#30306"
 msgid "Portugues (Brasil)"
 msgstr ""
 
-msgctxt "#39009"
+msgctxt "#30307"
 msgid "Portugues (Portugal)"
 msgstr ""
 
-msgctxt "#39010"
+msgctxt "#30308"
 msgid "Espanol (LATAM)"
 msgstr ""
 
-msgctxt "#39011"
+msgctxt "#30309"
 msgid "Espanol (Espana)"
 msgstr ""
 
-msgctxt "#39012"
+msgctxt "#30310"
 msgid "Done. Force language change is now disabled."
 msgstr ""

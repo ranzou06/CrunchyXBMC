@@ -51,8 +51,8 @@ class CrunchyJSON:
                 try:
                         userData = shelve.open(shelf_path,writeback=True)
                         local_string = __settings__.getLocalizedString
-                        notice_msg = local_string(37000).encode("utf8")
-                        setup_msg = local_string(37003).encode("utf8")
+                        notice_msg = local_string(30200).encode("utf8")
+                        setup_msg = local_string(30203).encode("utf8")
                         change_language = __settings__.getSetting("change_language")
                         if change_language == "0":
                                 userData.setdefault('API_LOCALE',"enUS")
@@ -454,8 +454,8 @@ class CrunchyJSON:
                 res_quality = ['low','mid','high','ultra']
                 quality = res_quality[int(__settings__.getSetting("video_quality"))]
                 local_string = __settings__.getLocalizedString
-                notice_msg = local_string(37000).encode("utf8")
-                setup_msg = local_string(38001).encode("utf8")
+                notice_msg = local_string(30200).encode("utf8")
+                setup_msg = local_string(30212).encode("utf8")
                 #Make the API call 
                 fields = "media.episode_number,media.name,media.description,media.url,media.stream_data"
                 values = {'session_id':self.userData['session_id'], 'version':self.userData['API_VERSION'], 'locale':self.userData['API_LOCALE'], 'media_id':media_id, 'fields':fields}
@@ -545,10 +545,10 @@ class CrunchyJSON:
                 import cookielib
                 cj = cookielib.LWPCookieJar()
                 local_string = __settings__.getLocalizedString
-                notice = local_string(37000).encode("utf8")
-                notice_msg = local_string(39001).encode("utf8")
-                notice_err = local_string(37006).encode("utf8")
-                notice_done = local_string(39012).encode("utf8")
+                notice = local_string(30200).encode("utf8")
+                notice_msg = local_string(30211).encode("utf8")
+                notice_err = local_string(30206).encode("utf8")
+                notice_done = local_string(30310).encode("utf8")
                 icon = xbmc.translatePath( __settings__.getAddonInfo('icon'))
                 if (self.userData['username'] != '' and self.userData['password'] != ''):
                     print "Crunchyroll.language: --> Attempting to log-in with your user account..."
