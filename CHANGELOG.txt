@@ -1,6 +1,6 @@
+[B]2.0.5[/B]
+Added Auto-Resume of watched Videos
 [B]2.0.3[/B]
-Expatriate Dateutil
-[B]2.0.2[/B]
 More Clean Up
 [B]2.0.1[/B]
 Merge Frodo and Gotham Repos
