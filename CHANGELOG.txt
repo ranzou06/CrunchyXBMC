@@ -1,5 +1,6 @@
 [B]2.0.5[/B]
 Added Auto-Resume of watched Videos
+Increased Area to try to catch issues with loading save data
 [B]2.0.3[/B]
 More Clean Up
 [B]2.0.1[/B]

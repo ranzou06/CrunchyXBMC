@@ -42,13 +42,13 @@ class CrunchyJSON:
                 self.loadShelf()
 
         def loadShelf(self):
-                self.base_path = xbmc.translatePath(__settings__.getAddonInfo('profile')).decode('utf-8')
-		self.base_cache_path = os.path.join(self.base_path, "cache")
-		if not os.path.exists(self.base_cache_path):
-			os.makedirs(self.base_cache_path)
-                shelf_path = os.path.join(self.base_path, "cruchyXBMC")
-                #Load Persistan Vars
                 try:
+                        self.base_path = xbmc.translatePath(__settings__.getAddonInfo('profile')).decode('utf-8')
+                        self.base_cache_path = os.path.join(self.base_path, "cache")
+                        if not os.path.exists(self.base_cache_path):
+                                os.makedirs(self.base_cache_path)
+                        shelf_path = os.path.join(self.base_path, "cruchyXBMC")
+                        #Load Persistan Vars
                         userData = shelve.open(shelf_path,writeback=True)
                         local_string = __settings__.getLocalizedString
                         notice_msg = local_string(30200).encode("utf8")
@@ -100,7 +100,7 @@ class CrunchyJSON:
                         userData['session_expires'] = current_datetime - dateutil.relativedelta.relativedelta( hours = +24 )
                         self.userData = userData
                         userData.close()
-                        print "Crunchyroll Catch"
+                        print "Crunchyroll -> Unable to Load shelve"
                         return False
 
                 if current_datetime > userData['lastreported']:
