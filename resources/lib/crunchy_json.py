@@ -352,7 +352,7 @@ class CrunchyJSON:
                 #print art
                 sort = 'asc' if complete is '1' else 'desc'
                 fields = "media.episode_number,media.name,media.description,media.media_type,media.series_name,media.available,media.available_time,media.free_available,media.free_available_time,media.playhead,media.duration,media.url,media.screenshot_image,image.fwide_url,image.fwidestar_url,series.landscape_image,image.full_url"
-                options = {'collection_id':collection_id, 'fields':fields, 'sort':sort, 'limit':'64'}
+                options = {'collection_id':collection_id, 'fields':fields, 'sort':sort, 'limit':'256'}
                 request = self.makeAPIRequest('list_media', options)
                 if request['error'] is False:	
                         return self.list_media_items(request['data'], series_name, season, 'normal', fanart)
