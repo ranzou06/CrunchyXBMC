@@ -506,7 +506,9 @@ class CrunchyJSON:
                                 else:
                                         url = allurl['low']
                                 playlist.add(url, item)
-                                xbmc.Player().play(playlist)
+                                player = xbmc.Player()
+                                player.play(playlist)
+                                #xbmc.Player().play(playlist)
                                 timeplayed = 1 + int(resumetime)
                                 temptimeplayed = timeplayed
                                 time.sleep(1)
@@ -522,6 +524,7 @@ class CrunchyJSON:
                                                         strTimePlayed = str(int(round(timeplayed)))
                                                         values = {'session_id':session_id, 'event':'playback_status', 'locale':self.userData['API_LOCALE'], 'media_id':media_id, 'version':'221', 'playhead':strTimePlayed}
                                                         request = self.makeAPIRequest('log', values)
+                                                        #print values
                                                         #print request
                                                 else:
                                                         x = x + 1
@@ -531,6 +534,7 @@ class CrunchyJSON:
                                 strTimePlayed = str(int(round(timeplayed)))
                                 values = {'session_id':session_id, 'event':'playback_status', 'locale':self.userData['API_LOCALE'], 'media_id':media_id, 'version':'221', 'playhead':strTimePlayed}
                                 request = self.makeAPIRequest('log', values)
+                                #print values
                                 #print request
 
 
