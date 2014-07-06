@@ -512,6 +512,8 @@ class CrunchyJSON:
                                 timeplayed = 1 + int(resumetime)
                                 temptimeplayed = timeplayed
                                 time.sleep(1)
+                                if timeplayed < 60:
+                                        playback_resume = False
                                 if playback_resume is True:
                                         xbmc.Player().seekTime(float(resumetime))
                                 x = 0
