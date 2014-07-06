@@ -128,6 +128,7 @@ class UI:
                         self.addItem({'Title':Anime, 'mode':'Channels','showtype':'Anime'})
                         self.addItem({'Title':Drama, 'mode':'Channels','showtype':'Drama'})
                         self.endofdirectory()
+                        
 
 	def channels(self):
                 local_string = __settings__.getLocalizedString
@@ -170,7 +171,7 @@ class UI:
 	def Fail(self):
                 local_string = __settings__.getLocalizedString
                 badstuff = local_string(30207).encode("utf8")
-		self.addItem({'Title':badstuff,'mode':'none'})
+		self.addItem({'Title':badstuff,'mode':'Fail'})
 		print "Crunchyroll takeout --> crunchy_main.py checkMode fall through"
 		self.endofdirectory()
 
@@ -178,11 +179,11 @@ class Main:
 
 	def __init__(self, checkMode = True):
                 crunchy_json.CrunchyJSON().loadShelf()
-		self.parseArgs()
-		if checkMode:
-			self.checkMode()
-                   
-                                
+                self.parseArgs()
+                if checkMode:
+                        self.checkMode()
+
+    
 	def parseArgs(self):
 		# call updateArgs() with our formatted argv to create the self.args object
 		if (sys.argv[2]):
