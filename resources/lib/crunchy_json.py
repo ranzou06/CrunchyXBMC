@@ -345,7 +345,7 @@ class CrunchyJSON:
                         else:
                                 for collection in request['data']:
                                         complete = '1' if collection['complete'] else '0'
-                                        crunchy_main.UI().addItem({'Title':collection['name'].encode("utf8"),'filterx':series_name.encode("utf8"),'mode':'list_media','count':str(count),'id':collection['collection_id'],'plot':collection['description'].encode("utf8"),'complete':complete,'season':str(collection['season']) , 'series_id':series_id,'Thumb':thumb, 'Fanart_Image':fanart}, True)
+                                        crunchy_main.UI().addItem({'Title':collection['name'].encode("utf8"),'filterx':series_name,'mode':'list_media','count':str(count),'id':collection['collection_id'],'plot':collection['description'].encode("utf8"),'complete':complete,'season':str(collection['season']) , 'series_id':series_id,'Thumb':thumb, 'Fanart_Image':fanart}, True)
                 crunchy_main.UI().endofdirectory('none')		
 
 ####################################################################################################

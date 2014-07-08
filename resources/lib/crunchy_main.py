@@ -91,7 +91,7 @@ class UI:
 			'&year='+urllib.quote_plus(info['year'])+\
 			'&playhead='+urllib.quote_plus(info['playhead'])+\
 			'&duration='+urllib.quote_plus(info['duration'])+\
-			'&plot='+urllib.quote_plus(info['plot'])
+			'&plot='+urllib.quote_plus(info['plot']+'%20')
 		#create list item
 		li=xbmcgui.ListItem(label = info['Title'], thumbnailImage = info['Thumb'])
 		li.setInfo( type="Video", infoLabels={ "Title":info['Title'], "Plot":info['plot'], "Year":info['year']})
