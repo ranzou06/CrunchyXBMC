@@ -73,7 +73,6 @@ class UI:
 		info.setdefault('playhead','0')
 		info.setdefault('duration','0')
 		info.setdefault('plot','No description available.')
-		#print info
 		#create params for xbmcplugin module
 		u = sys.argv[0]+\
 			'?url='+urllib.quote_plus(info['url'])+\
@@ -94,7 +93,6 @@ class UI:
 			'&duration='+urllib.quote_plus(info['duration'])+\
 			'&plot='+urllib.quote_plus(info['plot'])
 		#create list item
-		#print u
 		li=xbmcgui.ListItem(label = info['Title'], thumbnailImage = info['Thumb'])
 		li.setInfo( type="Video", infoLabels={ "Title":info['Title'], "Plot":info['plot'], "Year":info['year']})
 		li.setProperty( "Fanart_Image", info['Fanart_Image'])
@@ -172,7 +170,7 @@ class UI:
                 local_string = __settings__.getLocalizedString
                 badstuff = local_string(30207).encode("utf8")
 		self.addItem({'Title':badstuff,'mode':'Fail'})
-		print "Crunchyroll takeout --> crunchy_main.py checkMode fall through"
+		xbmc.log( "Crunchyroll takeout --> crunchy_main.py checkMode fall through")
 		self.endofdirectory()
 
 class Main:
