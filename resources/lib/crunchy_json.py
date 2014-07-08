@@ -96,18 +96,13 @@ class CrunchyJSON:
                         userData['session_id'] = ''
                         userData['auth_expires'] = current_datetime - dateutil.relativedelta.relativedelta( hours = +24 )
                         userData['lastreported'] = current_datetime - dateutil.relativedelta.relativedelta( hours = +24 )
-                        userData['premium_type'] = 'unknown'
+                        userData['premium_type'] = 'UNKNOWN'
                         userData['auth_token'] = ''
                         userData['session_expires'] = current_datetime - dateutil.relativedelta.relativedelta( hours = +24 )
                         self.userData = userData
                         userData.close()
                         xbmc.log( "Crunchyroll -> Unable to Load shelve")
                         return False
-
-                if current_datetime > userData['lastreported']:
-                        userData['lastreported'] = (current_datetime + dateutil.relativedelta.relativedelta( hours = +24 ))
-                        self.userData = userData
-                        self.usage_reporting() #Call for Usage Reporting
 
                 #Check to see if a session_id doesn't exist or if the current auth token is invalid and if so start a new session and log it in.                   
                 if (not userData.has_key('session_id')) or (not userData.has_key('auth_expires')) or current_datetime > userData['auth_expires']:
@@ -163,6 +158,11 @@ class CrunchyJSON:
                                         self.userData = userData
                                         userData.close()
                                         return False
+                        #Call for Usage Reporting
+                        if current_datetime > userData['lastreported']:
+                                userData['lastreported'] = (current_datetime + dateutil.relativedelta.relativedelta( hours = +24 ))
+                                self.userData = userData
+                                self.usage_reporting() 
                         #Verify user is premium
                         if userData['premium_type'] in 'anime|drama|manga':
                                 xbmc.log("Crunchyroll.bundle ----> User is a premium "+str(userData['premium_type'])+" member.")
@@ -202,7 +202,12 @@ class CrunchyJSON:
                                         userData['session_expires'] = (current_datetime + dateutil.relativedelta.relativedelta( hours = +4 )) #4 hours is a guess. Might be +/- 4.
                                         userData['test_session'] = current_datetime 
                                         xbmc.log("Crunchyroll.bundle ----> Session restart successful. New session_id is: "+ str(userData['session_id']))
-                                                        
+                                        #Call for Usage Reporting
+                                        if current_datetime > userData['lastreported']:
+                                                userData['lastreported'] = (current_datetime + dateutil.relativedelta.relativedelta( hours = +24 ))
+                                                self.userData = userData
+                                                self.usage_reporting() 
+                                                
                                         #Verify user is premium
                                         if userData['premium_type'] in 'anime|drama|manga':
                                                 xbmc.log("Crunchyroll.bundle ----> User is a premium "+str(userData['premium_type'])+" member.")
@@ -253,6 +258,11 @@ class CrunchyJSON:
                                 request = self.makeAPIRequest('queue', options)
                                 if request['error'] is False:	
                                         xbmc.log("Crunchyroll.bundle ----> A valid session was detected. Using existing session_id of: "+ str(userData['session_id']))
+                                        #Call for Usage Reporting
+                                        if current_datetime > userData['lastreported']:
+                                                userData['lastreported'] = (current_datetime + dateutil.relativedelta.relativedelta( hours = +24 ))
+                                                self.userData = userData
+                                                self.usage_reporting() 
                                         #Verify user is premium
                                         if userData['premium_type'] in 'anime|drama|manga':
                                                 xbmc.log("Crunchyroll.bundle ----> User is a premium "+str(userData['premium_type'])+" member.")
