@@ -72,7 +72,7 @@ class UI:
 		info.setdefault('year','0')
 		info.setdefault('playhead','0')
 		info.setdefault('duration','0')
-		info.setdefault('plot','No description available.')
+		info.setdefault('plot','None')
 		#create params for xbmcplugin module
 		u = sys.argv[0]+\
 			'?url='+urllib.quote_plus(info['url'])+\
